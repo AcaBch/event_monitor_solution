@@ -20,13 +20,13 @@ Use a C99-compatible compiler. No external libraries are used.
 
 ### For Windows (using MinGW/gcc):
 ```cmd
-gcc -Wall -Wextra -std=c99 -o test_event_monitor.exe test_event_monitor.c event_monitor.c user_implemented.c
+gcc -Wall -Wextra -std=c99 -o test_event_monitor.exe test_event_monitor.c event_monitor.c
 .\test_event_monitor.exe
 ```
 
 ### For Linux/Mac:
 ```bash
-gcc -Wall -Wextra -std=c99 -o test_event_monitor test_event_monitor.c event_monitor.c user_implemented.c
+gcc -Wall -Wextra -std=c99 -o test_event_monitor test_event_monitor.c event_monitor.c
 ./test_event_monitor
 ```
 
@@ -35,7 +35,6 @@ gcc -Wall -Wextra -std=c99 -o test_event_monitor test_event_monitor.c event_moni
 - `event_monitor.c/h` – Core implementation
 - `gpio_hal.h` – GPIO HAL interface (provided by hardware team)
 - `rtos_api.h` – RTOS API interface (provided by RTOS team)
-- `user_implemented.c` – User implementation of report_event_count()
 - `test_event_monitor.c` – Unit tests with mocked HAL and RTOS functions
 - `README.md` – This file
 
